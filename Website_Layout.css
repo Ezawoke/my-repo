@@ -1,0 +1,212 @@
+/*Body*/
+
+#body {
+    background-color: 112233;
+}
+
+/*General*/
+
+#header {
+    clear:both;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: Cinzel, serif;
+    background-color: 112233;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+#footer {
+    clear:both;
+    text-align: center;
+    font-family: Fauna One;
+    background-color: 112233;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.mainArea {
+    float: left;
+    width: 60%;
+    background-color:#aabbcc;
+    padding: 15px;
+    margin: auto 10px;
+    text-align: center;
+    align-items: center;
+    font-family: 'Fauna One', serif;
+}
+
+.mainPageTitle {
+    font-size: 4.5vw;
+    font-family: Cinzel, serif;
+    line-height: 10px;
+    height: 10px;
+}
+
+hr {
+    border: none;
+    height: 10px;
+    background-color: #333;
+  }
+
+#sideBar {
+    background: #AABBCC;
+    background: -moz-linear-gradient(top, #AABBCC 0%, #DDEEFF 50%, #aabbcc 100%);
+    background: -webkit-linear-gradient(top, #AABBCC 0%, #DDEEFF 50%, #aabbcc 100%);
+    background: linear-gradient(to bottom, #AABBCC 0%, #DDEEFF 50%, #aabbcc 100%);
+    padding: 20px;
+    margin: 10px;
+    height: 180px;
+    width: 32%;
+    float: right;
+    border: 5px solid #ffffff;
+    text-align: center;
+    font-family: Cinzel, serif;
+}
+
+#mainNavigation {
+    background-color: #445566;
+    color: white;
+    padding: 3px;
+    margin: 10px;
+    word-spacing: 5px;
+    text-align: center;
+    font-family: 'Fauna One', serif;
+}
+
+#mainNavigation a:hover {
+    background-color: #ddeeff;
+    color: black;
+}
+
+#mainNavigation ul a{
+    text-align: center;
+    padding: 20px;
+} 
+
+.navigationLink {
+    color:black;
+    text-decoration:none;
+}
+
+.buttons {
+    display: flex;
+    padding: 5px;
+}
+
+/* Buttons for Site */
+
+.button-28 {
+  appearance: none;
+  background-color: white;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Fauna One', serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+/* Search */
+
+#searchForm {
+    color: white;
+    font-family: 'Fauna One', serif;
+    display: inline-block;
+    text-align: left;
+}
+
+#searchFormDiv {
+    text-align: center;
+}
+
+#map { 
+    height: 180px;
+    padding: 10px;
+ }
+
+#searchResults {
+    margin: auto 5px;
+    padding: 10px;
+    font-family: 'Fauna One', serif;
+}
+
+.searchDiv {
+    display: inline-block;
+    width: 45%;
+    border: 5px solid #333333;
+    border-radius: 15px;
+    color: white;
+    background-color: #6e7f80;
+    text-align: center;
+    margin: auto 15px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'Fauna One', serif;
+}
+
+/* About Us */
+
+.aboutusArea {
+    float: left;
+    width: 60%;
+    background-color:#aabbcc;
+    padding: 15px;
+    margin: auto 10px;
+    text-align: center;
+    align-items: center;
+    font-family: 'Fauna One', serif;
+    border: 5px dashed white;
+}
+
+.aboutusTitle {
+    font-size: 6.0vw;
+    font-family: Cinzel, serif;
+    line-height: 10px;
+    height: 10px;
+}
+
+#aboutusSidebar {
+    background-color: 536878;
+    padding: 20px;
+    margin: 10px;
+    height: auto;
+    width: 32%;
+    float: right;
+    text-align: center;
+}
