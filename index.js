@@ -11,6 +11,11 @@ const supabaseUrl = 'https://kmphtrwdjfkhholtwjnt.supabase.co'
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImttcGh0cndkamZraGhvbHR3am50Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTU2NDQ1NjIsImV4cCI6MjAzMTIyMDU2Mn0.gmZ9Z_GcU_Hs4Y36umflt-tdrq2dzinBBsfZ2MVdktw'
 const supabase = supabaseClient.createClient(supabaseUrl, supabaseKey)
 
+app.get('/',(req, res) => {
+    res.sendFile('/public/hotel.html', {root:__dirname })
+})
+
+
 app.get('/hotel', async (req, res) => {
     console.log('attempting to GET all hotels')
 
@@ -31,13 +36,12 @@ app.post('/hotel', async (req, res) => {
 
     console.log(req.body);
     var hotelName = req.body.hotelName;
-    var continentName = req.body.continentName;
-    var cityName = req.body.cityName;
     var countryName = req.body.countryName;
+    var cityName = req.body.cityName;
 
     const { data, error } = await supabase
         .from('hotel')
-        .insert({ 'hotel_name': hotelName, 'continent_name': continentName, 'city_name': cityName, 'country_name': countryName })
+        .insert({ 'hotel_name': hotelName, 'city_name': cityName, 'country_name': countryName })
         .select()
 
     if (error) {
